@@ -39,7 +39,6 @@ const LoginForm = () => {
         <button
           onClick={() => navigate("/profile")}
           className="w-full py-2 mt-5 bg-gray-300 text-white font-medium rounded-lg cursor-pointer"
-          disabled
         >
           Login
         </button>
