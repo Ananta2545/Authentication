@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Welcome = () => {
+
+    const navigate = useNavigate()
+
   return (
     <div className="flex items-end justify-center min-h-screen">
       <div className="w-full max-w-[350px] lg:max-w-[600px] p-6 rounded-xl text-center">
@@ -9,10 +13,10 @@ const Welcome = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <div className="mt-6">
-          <button className="w-full py-2 bg-[#6c25ff] text-white font-medium rounded-lg cursor-pointer">
+          <button onClick={()=>navigate('/signup')} className="w-full py-2 bg-[#6c25ff] text-white font-medium rounded-lg cursor-pointer">
             Create Account
           </button>
-          <button className="cursor-pointer w-full py-2 mt-3 bg-[#6c25ff48] text-[#1d2226] font-medium rounded-lg">
+          <button onClick={()=>navigate('/login')} className="cursor-pointer w-full py-2 mt-3 bg-[#6c25ff48] text-[#1d2226] font-medium rounded-lg">
             Already Registered? Login
           </button>
         </div>
