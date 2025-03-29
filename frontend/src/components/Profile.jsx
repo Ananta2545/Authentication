@@ -14,7 +14,6 @@ const Profile = () => {
             alt="Profile"
             className="w-14 h-14 rounded-full object-cover"
           />
-          {/* Custom SVG Camera Icon */}
           <div className="absolute bottom-0 right-0 w-6 h-6 bg-[#6C25FF] rounded-full flex items-center justify-center cursor-pointer">
             <svg
               stroke="currentColor"
@@ -34,12 +33,14 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* Description Section */}
-      <div className="px-6 pb-6 text-sm text-gray-600">
+      <p className="px-6 pb-6 text-sm text-gray-600">
         Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam
         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
         sed diam.
-      </div>
+      </p>
+      <div className="border-t-2 border-dashed border-gray-300 mt-6"></div>
+      <div className="border-t-2 border-dashed border-gray-300 mt-55"></div>
+
     </div>
   );
 };

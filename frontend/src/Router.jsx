@@ -1,6 +1,6 @@
 import React from 'react';
 import Welcome from './components/Welcome';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import SignupForm from './components/SignUpForm';
 import Profile from './components/Profile';
